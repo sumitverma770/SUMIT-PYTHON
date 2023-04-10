@@ -39,6 +39,10 @@ class MyScraper:
         sc.collect_all()
         #savedata
         sc.save('mobile.csv')
+        def get_brand_name(name):
+            brand = name.split()[0]
+            brand = brand.lower()
+            return brand
 
 
 
